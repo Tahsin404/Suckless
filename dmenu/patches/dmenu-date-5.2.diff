@@ -1,0 +1,57 @@
+From 64fb38e3778addc0272eb8793deb909e639e5746 Mon Sep 17 00:00:00 2001
+From: piotr-marendowski <piotr-marendowski@tutanota.com>
+Date: Thu, 6 Jul 2023 10:03:03 +0000
+Subject: [PATCH] Displays date and time at the bottom of the vertical layout.
+
+---
+ dmenu.c | 20 +++++++++++++++++++-
+ 1 file changed, 19 insertions(+), 1 deletion(-)
+
+diff --git a/dmenu.c b/dmenu.c
+index 7cf253b..5428f67 100644
+--- a/dmenu.c
++++ b/dmenu.c
+@@ -84,7 +84,7 @@ calcoffsets(void)
+ 	int i, n;
+ 
+ 	if (lines > 0)
+-		n = lines * bh;
++		n = (lines * bh) - 1;
+ 	else
+ 		n = mw - (promptw + inputw + TEXTW("<") + TEXTW(">"));
+ 	/* calculate which items will begin the next page and previous page */
+@@ -143,6 +143,22 @@ drawitem(struct item *item, int x, int y, int w)
+ 	return drw_text(drw, x, y, w, bh, lrpad / 2, item->text, 0);
+ }
+ 
++static int
++drawdate(int x, int y, int w)
++{
++    char date[128];
++    time_t t = time(NULL);
++    struct tm *tm = localtime(&t);
++
++    /* Hour:Minute DayOfTheWeek DayOfTheMonth Month Year */
++    strftime(date, sizeof(date), "%H:%M %A %d %B %Y", tm);
++
++	drw_setscheme(drw, scheme[SchemeSel]);
++
++	int r = drw_text(drw, x, y, w, bh, lrpad / 2, date, 0);
++	return r;
++}
++
+ static void
+ drawmenu(void)
+ {
+@@ -172,6 +188,8 @@ drawmenu(void)
+ 		/* draw vertical list */
+ 		for (item = curr; item != next; item = item->right)
+ 			drawitem(item, x, y += bh, mw - x);
++
++        drawdate(x, lines * bh, w);
+ 	} else if (matches) {
+ 		/* draw horizontal list */
+ 		x += inputw;
+-- 
+2.41.0
+
