@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int gappx     = 10;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
@@ -9,25 +9,25 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const int vertpad            = 20;       /* vertical padding of bar */
 static const int sidepad            = 0;       /* horizontal padding of bar */
 static const int user_bh            = 25;        /* 0 means that dwm will calculate bar height, >= 1 means dwm will user_bh as bar height */
-static const char *fonts[2]          = { "Monofur Nerd Font Mono:style=Bold:size=20", "FontAwesome:style=Regular:size=30" };
+static const char *fonts[]          = { "Monofur Nerd Font Mono:style=Bold:size=20", "FontAwesome:style=Regular:size=30" };
 static const char dmenufont[]       = "Monofur Nerd Font Mono:style=Bold:size=15";
 static const char col_gray1[]       = "#9064e3";
 static const char col_gray2[]       = "#c2a6f7";
 static const char col_gray3[]       = "#c2a6f7";
 static const char col_gray4[]       = "#9064e3";
-static const char col_cyan[]        = "#9daafa";
-static const unsigned int baralpha = 0xa3;
-static const unsigned int borderalpha = OPAQUE;
+static const char col_cyan[]        = "#ba68a2";
+static const unsigned int baralpha = 140;
+static const unsigned int borderalpha = 140;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray1 },
-	[SchemeSel]  = { col_gray4, col_gray2,  col_cyan  },
+	[SchemeNorm] = { col_cyan, col_gray1, col_gray3 },
+	[SchemeSel]  = { col_gray4, col_gray2,  col_cyan },
 };
 
 static const unsigned int alphas[][3]      = {
     /*               fg      bg        border*/
-    [SchemeNorm] = { OPAQUE, baralpha, borderalpha },
-	[SchemeSel]  = { OPAQUE, baralpha, borderalpha },
+    [SchemeNorm] = { baralpha, baralpha, OPAQUE },
+	[SchemeSel]  = { baralpha, baralpha, OPAQUE },
 };
 
 static const char *const autostart[] = {
