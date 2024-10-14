@@ -15,6 +15,7 @@ static const int user_bh            = 32;        /* 0 means that dwm will calcul
 static const char *fonts[]          = { "Monofur Nerd Font Mono:style=Bold:size=21" };
 static const char dmenufont[]       = "Monofur Nerd Font Mono:style=Bold:size=15";
 static const char col_gray1[]       = "#000000";
+static const char col_gray5[]       = "#ffffff";
 static const char col_gray2[]       = "#f562f5";
 static const char col_gray3[]       = "#c2a6f7";
 static const char col_gray4[]       = "#9064e3";
