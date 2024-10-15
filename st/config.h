@@ -97,45 +97,45 @@ unsigned int tabspaces = 8;
 float alpha = 0.25;
 
 /* Terminal colors (16 first used in escape sequence) */
-static const char *colorname[] = {
+/*static const char *colorname[] = {*/
   /* 8 normal colors */
-  [0] = "#000000", /* black   */
-  [1] = "#15100b", /* red     */
-  [2] = "#2a211b", /* green   */
-  [3] = "#473930", /* yellow  */
-  [4] = "#6b584a", /* blue    */
-  [5] = "#977d6a", /* magenta */
-  [6] = "#caa990", /* cyan    */
-  [7] = "#ece0d9", /* white   */
+  /*[0] = "#000000",*/ /* black   */ 
+  /*[1] = "#15100b", *//* red     */
+  /*[2] = "#2a211b",*/ /* green   */
+  /*[3] = "#473930",*/ /* yellow  */
+  /*[4] = "#6b584a",*/ /* blue    */
+  /*[5] = "#977d6a",*/ /* magenta */
+  /*[6] = "#caa990",*/ /* cyan    */
+  /*[7] = "#ece0d9",*/ /* white   */
 
   /* 8 bright colors */
-  [8]  = "#91a177", /* black   */
-  [9]  = "#a889c8", /* red     */
-  [10] = "#98ad74", /* green   */
-  [11] = "#ca98ac", /* yellow  */
-  [12] = "#bc9679", /* blue    */
-  [13] = "#9a7555", /* magenta */
-  [14] = "#baa6d1", /* cyan    */
-  [15] = "#a4856e", /* white   */
+  /*[8]  = "#91a177",*/ /* black   */
+  /*[9]  = "#a889c8",*/ /* red     */
+  /*[10] = "#98ad74",*/ /* green   */
+  /*[11] = "#ca98ac",*/ /* yellow  */
+  /*[12] = "#bc9679",*/ /* blue    */
+  /*[13] = "#9a7555",*/ /* magenta */
+  /*[14] = "#baa6d1",*/ /* cyan    */
+  /*[15] = "#a4856e",*/ /* white   */
 
-	[255] = 0,
+	/*[255] = 0,*/
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
-	"#f38efa", /* default foreground colour */
-	"black", /* default background colour */
-};
+	/*"#cccccc",*/
+	/*"#555555",*/
+	/*"#f38efa",*/ /* default foreground colour */
+	/*"black",*/ /* default background colour */
+/*};*/
 
-
+#include "/home/xelius/.cache/wal/colors-wal-st.h"
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 258;
-unsigned int defaultbg = 259;
-unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+/*unsigned int defaultfg = 258;*/
+/*unsigned int defaultbg = 259;*/
+/*unsigned int defaultcs = 256;*/
+/*static unsigned int defaultrcs = 257;*/
 
 /*
  * https://invisible-island.net/xterm/ctlseqs/ctlseqs.html#h4-Functions-using-CSI-_-ordered-by-the-final-character-lparen-s-rparen:CSI-Ps-SP-q.1D81

@@ -13,17 +13,19 @@ static const char *fonts[] = {
 	"monospace:size=15"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
-static const char *colors[SchemeLast][2] = {
+/*static const char *colors[SchemeLast][2] = {*/
 
                 /*     fg         bg   */
-	[SchemeNorm] ={ "#e794f7", "#000000" },      /* Hot Pink */
-	[SchemeSel] = { "#e794f7", "#b93cc2" },
-	[SchemeOut] = { "#e794f7", "#000000" }, 
+/*	[SchemeNorm] ={ "#e794f7", "#000000" },*/      /* Hot Pink */
+/*	[SchemeSel] = { "#e794f7", "#b93cc2" },*/
+/*	[SchemeOut] = { "#e794f7", "#000000" },*/ 
 	              /*     fg         bg      */
 	/*[SchemeNorm] ={ "#00c9c6", "#000000" },       Cyberpunk Theme
 	[SchemeSel] = { "#00c9c6", "#fff200" },
 	[SchemeOut] = { "#00c9c6", "#000000" },*/
-};
+/*};*/
+
+#include "/home/xelius/.cache/wal/colors-wal-dmenu.h"
 
 static const unsigned int alphas[SchemeLast][2] = {
 	[SchemeNorm] = { OPAQUE, alpha },
