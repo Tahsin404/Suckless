@@ -43,7 +43,6 @@ static const unsigned int alphas[][3]      = {
 };
 
 static const char *const autostart[] = {
-	"slstatus", NULL,
 	NULL /* terminate */
 };
 
