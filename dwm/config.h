@@ -115,7 +115,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
-  { MODKEY|ShiftMask,              XK_y, spawn,            SHCMD("flameshot gui") },
+  { MODKEY|ShiftMask,              XK_y, spawn,            SHCMD("deepin-screen-recorder") },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	TAGKEYS(                        XK_1,                      0)
