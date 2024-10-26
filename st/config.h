@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Monofur Nerd Font Mono:style=Bold:size=17";
+static char *font = "Hack Nerd Font:style=Regular:size=13";
 static int borderpx = 2;
 
 /*

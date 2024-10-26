@@ -12,8 +12,17 @@ static const char *altbarcmd        = "$HOME/bar.sh"; /* Alternate bar launch co
 static const int vertpad            = 15;       /* vertical padding of bar */
 static const int sidepad            = 0;       /* horizontal padding of bar */
 static const int user_bh            = 32;        /* 0 means that dwm will calculate bar height, >= 1 means dwm will user_bh as bar height */
-static const char *fonts[]          = { "Monofur Nerd Font Mono:style=Bold:size=21" };
-static const char dmenufont[]       = "Monofur Nerd Font Mono:style=Bold:size=15";
+static const char *fonts[]          = { "Hack Nerd Font:style=Regular:size=15" };
+static const char dmenufont[]       = "Hack Nerd Font:style=Regular:size=12";
+static const char norm_fg[]         = "#ac81c1";
+static const char norm_bg[]         = "#05010A";
+static const char norm_border[]     = "#785a87";
+static const char sel_fg[]          = "#ac81c1";
+static const char sel_bg[]          = "#3B2054";
+static const char sel_border[]      = "#ac81c1";
+static const char urg_fg[]          = "#ac81c1";
+static const char urg_bg[]          = "#361549";
+static const char urg_border[]      = "#361549";
 static const char col_bg[]          = "#000000";
 static const char col_gray2[]       = "#f562f5";
 static const char col_gray3[]       = "#c2a6f7";
@@ -28,12 +37,16 @@ static const unsigned int baralpha = 0x00;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */          /* Hot Pink Theme*/ 
-	[SchemeNorm] = { col_gray3, col_bg, col_gray4 },
-	[SchemeSel]  = { col_gray4, col_gray3,  col_gray2  },
+	/*[SchemeNorm] = { col_gray3, col_bg, col_gray4 },*/
+	/*[SchemeSel]  = { col_gray4, col_gray3,  col_gray2  },*/
 
 	/*               fg         bg         border   */         /* Cyberpunk Theme */
 	/*[SchemeNorm] = { col_gray5, col_bg, col_gray8 },
 	[SchemeSel]  = { col_gray6, col_gray7,  col_gray9  },*/
+
+  [SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins
+  [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win
+
 };
 
 static const unsigned int alphas[][3]      = {
