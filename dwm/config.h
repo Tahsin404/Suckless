@@ -37,15 +37,15 @@ static const unsigned int baralpha = 0x00;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */          /* Hot Pink Theme*/ 
-	/*[SchemeNorm] = { col_gray3, col_bg, col_gray4 },*/
-	/*[SchemeSel]  = { col_gray4, col_gray3,  col_gray2  },*/
+	[SchemeNorm] = { col_gray3, norm_bg, col_gray4 },
+	[SchemeSel]  = { col_gray4, col_gray3,  col_gray2  },
 
 	/*               fg         bg         border   */         /* Cyberpunk Theme */
 	/*[SchemeNorm] = { col_gray5, col_bg, col_gray8 },
 	[SchemeSel]  = { col_gray6, col_gray7,  col_gray9  },*/
 
-  [SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins
-  [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win
+  /*[SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins*/
+  /*[SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win*/
 
 };
 
@@ -60,7 +60,7 @@ static const char *const autostart[] = {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "󰈹", "󰣇", "󰓇", "" };
+static const char *tags[] = { "  ", "  ", " 󰈹 ", " 󰣇 ", " 󰓇 ", "  " };
 
 static const Rule rules[] = {
 	/* xprop(1):
