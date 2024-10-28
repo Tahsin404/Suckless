@@ -10,10 +10,10 @@ static const int usealtbar          = 0;        /* 1 means use non-dwm status ba
 static const char *altbarclass      = "Polybar"; /* Alternate bar class name */
 static const char *altbarcmd        = "$HOME/bar.sh"; /* Alternate bar launch command */
 static const int vertpad            = 15;       /* vertical padding of bar */
-static const int sidepad            = 0;       /* horizontal padding of bar */
+static const int sidepad            = 13;       /* horizontal padding of bar */
 static const int user_bh            = 32;        /* 0 means that dwm will calculate bar height, >= 1 means dwm will user_bh as bar height */
-static const char *fonts[]          = { "Hack Nerd Font:style=Regular:size=15" };
-static const char dmenufont[]       = "Hack Nerd Font:style=Regular:size=12";
+static const char *fonts[]          = { "Lekton Nerd Font:style=Regular:size=17" };
+static const char dmenufont[]       = "Lekton Nerd Font:style=Regular:size=14";
 static const char norm_fg[]         = "#ac81c1";
 static const char norm_bg[]         = "#05010A";
 static const char norm_border[]     = "#785a87";
@@ -60,7 +60,7 @@ static const char *const autostart[] = {
 };
 
 /* tagging */
-static const char *tags[] = { "  ", "  ", " 󰈹 ", " 󰣇 ", " 󰓇 ", "  " };
+static const char *tags[] = { " ", " ", "󰈹 ", "󰣇 ", "󰓇 ", " " };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -75,7 +75,7 @@ static const Rule rules[] = {
 /* layout(s) */
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
-static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
+static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
 static const int attachbelow = 1;    /* 1 means attach after the currently active window */
 static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
 
