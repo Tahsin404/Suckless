@@ -10,7 +10,7 @@ static const float menu_height_ratio = 2.0f;  /* This is the ratio used in the o
 static const int user_bh = 15;               /* add an defined amount of pixels to the bar height */
 
 static const char *fonts[] = {
-	"Lekton Nerd Font Propo:style=Regular:size=17"
+	"Lekton Nerd Font Propo:style=Regular:size=14"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 /*static const char *colors[SchemeLast][2] = {*/

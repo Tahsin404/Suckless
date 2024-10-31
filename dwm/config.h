@@ -14,6 +14,12 @@ static const int sidepad            = 0;       /* horizontal padding of bar */
 static const int user_bh            = 35;        /* 0 means that dwm will calculate bar height, >= 1 means dwm will user_bh as bar height */
 static const char *fonts[]          = { "Monofur Nerd Font Mono:style=Bold:size=21" };
 static const char dmenufont[]       = "Monofur Nerd Font Mono:style=Bold:size=15";
+static const char norm_fg[]         = "#decfc5";
+static const char norm_bg[]         = "#0a0b0d";
+static const char norm_border[]     = "#9b9089";
+static const char sel_fg[]          = "#decfc5";
+static const char sel_bg[]          = "#96533C";
+static const char sel_border[]      = "#decfc5";
 static const char col_gray1[]       = "#9064e3";
 static const char col_gray2[]       = "#c2a6f7";
 static const char col_gray3[]       = "#c2a6f7";
@@ -21,10 +27,16 @@ static const char col_gray4[]       = "#9064e3";
 static const char col_cyan[]        = "#9daafa";
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
-static const char *colors[][3]      = {
+/*static const char *colors[][3]      = {*/
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray1 },
-	[SchemeSel]  = { col_gray4, col_gray2,  col_cyan  },
+/*	[SchemeNorm] = { col_gray3, col_gray1, col_gray1 },*/
+/*	[SchemeSel]  = { col_gray4, col_gray2,  col_cyan  },*/
+/*};*/
+
+static const char *colors[][3]      = {
+    /*               fg           bg         border                         */
+    [SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins
+    [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win
 };
 
 static const unsigned int alphas[][3]      = {
@@ -78,7 +90,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *dmenucmd[] = { "dmenu_run", NULL};
 static const char *termcmd[]  = { "st", NULL };
 
 #include "movestack.c"
