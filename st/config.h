@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Terminess Nerd Font Mono:style=Regular:size=17";
+static char *font = "Hack Nerd Font Mono:style=Regular:size=15";
 static int borderpx = 2;
 
 /*
