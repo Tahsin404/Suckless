@@ -34,6 +34,7 @@ enum glyph_attribute {
 	ATTR_WIDE       = 1 << 9,
 	ATTR_WDUMMY     = 1 << 10,
 	ATTR_BOLD_FAINT = ATTR_BOLD | ATTR_FAINT,
+	ATTR_DIRTYUNDERLINE = 1 << 15,
 };
 
 enum selection_mode {
@@ -65,6 +66,8 @@ typedef struct {
 	ushort mode;      /* attribute flags */
 	uint32_t fg;      /* foreground  */
 	uint32_t bg;      /* background  */
+	int ustyle;	  /* underline style */
+	int ucolor[3];    /* underline color */
 } Glyph;
 
 typedef Glyph *Line;
