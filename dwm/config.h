@@ -99,6 +99,7 @@ static const Key keys[] = {
 	{ 0,                            XK_Super_L,spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
   	{ MODKEY|ShiftMask,             XK_f,      spawn,          SHCMD("st -e ranger")},
+  	{ MODKEY|ShiftMask,             XK_F10,      spawn,          SHCMD("st -e cava")},
   	{ MODKEY|ShiftMask,             XK_BackSpace,      spawn,          SHCMD("shutdown now")},
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
