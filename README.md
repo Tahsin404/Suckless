@@ -41,6 +41,9 @@ https://github.com/user-attachments/assets/c07f27e2-9173-4dd9-99bb-a6f63b1f210f
    # For Demo Look
    cp *.h $HOME/.cache/wal
    ```
+>[!Note]
+  When applying colorscheme to dwm with wal, I got an error, this is because I don't have SchemeUrgent patch. If you decide to patch it in then you will have no problems otherwise you will have to manually add the lines from colors-wal-dwm.h
+
 7. Install [picom-ftlabs](https://github.com/FT-Labs/picom) for the exact animation shown in Demo. Make a folder in .config named *picom* and paste picom.conf there.
    ```
    #For Arch users
@@ -51,6 +54,3 @@ https://github.com/user-attachments/assets/c07f27e2-9173-4dd9-99bb-a6f63b1f210f
 8. Install [starship](https://starship.rs/) and copy the .toml file into .config `cp starship.toml ~/.config`   
 9. cd into the dwm, st and dmenu folders and `make` and `make clean install`
 10. You can also copy the ranger config files from the Suckless folder into your own ranger config folder if you want this look. And some shortcuts.
-
-## Notes
-When applying colorscheme to dwm with wal, I got an error, this is because I don't have SchemeUrgent patch. If you decide to patch it in then you will have no problems otherwise you will have to manually add the lines from colors-wal-dwm.h
