@@ -40,7 +40,7 @@ https://github.com/user-attachments/assets/2ef5dfaa-c415-422e-8683-f9d67f7289b8
    # For Demo Look
    cp *.h $HOME/.cache/wal
    ```
-7. Install picom-ftlabs for the exact animation shown in Demo. Make a folder in .config named *picom* and paste picom.conf there.
+7. Install ![picom-ftlabs](https://github.com/FT-Labs/picom) for the exact animation shown in Demo. Make a folder in .config named *picom* and paste picom.conf there.
    ```
    #For Arch users
    yay -S picom-ftlabs-git
