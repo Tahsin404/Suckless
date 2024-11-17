@@ -5,7 +5,8 @@
 ![SS4](https://github.com/user-attachments/assets/e85eae66-0b1e-4816-b100-fa79384e9336)
 
 
-https://github.com/user-attachments/assets/2ef5dfaa-c415-422e-8683-f9d67f7289b8
+https://github.com/user-attachments/assets/c07f27e2-9173-4dd9-99bb-a6f63b1f210f
+
 
 # Requirements
 1. This Suckless repo
