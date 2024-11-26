@@ -23,8 +23,8 @@ https://github.com/user-attachments/assets/c07f27e2-9173-4dd9-99bb-a6f63b1f210f
 # Installation
 1. Install your preferred Nerd Fonts. I used Lekton, Ubuntu, Hack and Monofur.
 2. Clone this repository (preferably in your home directory) `git clone https://github.com/Tahsin404/Suckless.git`. Do not compile just yet.
-3. Follow the instructions and install [polybar-dwm-module](https://github.com/mihirlad55/polybar-dwm-module) from their git repo. You do not need to patch this dwm with IPC and anybar as they are already patched in. For Arch Users you can use the AUR:
-   `yay -S polybar-dwm-module`
+3. Follow the instructions and install [polybar-dwm-module](https://github.com/pgrondek/polybar-dwm) from their git repo. You do not need to patch this dwm with IPC and anybar as they are already patched in. For Arch Users you can use the AUR:
+   `yay -S polybar-dwm-git`
 5. Make a directory in .config named polybar then cd into Suckless and copy config.ini and bar.sh into it.
    ```
    mkdir $HOME/.config/polybar
