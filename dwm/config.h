@@ -9,17 +9,11 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const int usealtbar          = 1;        /* 1 means use non-dwm status bar */
 static const char *altbarclass      = "Polybar"; /* Alternate bar class name */
 static const char *altbarcmd        = "$HOME/.config/polybar/bar.sh"; /* Alternate bar launch command */
-static const int vertpad            = 0;       /* vertical padding of bar */
+static const int vertpad            = 5;       /* vertical padding of bar */
 static const int sidepad            = 0;       /* horizontal padding of bar */
 static const int user_bh            = 35;        /* 0 means that dwm will calculate bar height, >= 1 means dwm will user_bh as bar height */
-static const char *fonts[]          = { "Monofur Nerd Font Mono:style=Bold:size=21" };
-static const char dmenufont[]       = "Monofur Nerd Font Mono:style=Bold:size=15";
-static const char norm_fg[]         = "#decfc5";
-static const char norm_bg[]         = "#0a0b0d";
-static const char norm_border[]     = "#9b9089";
-static const char sel_fg[]          = "#decfc5";
-static const char sel_bg[]          = "#96533C";
-static const char sel_border[]      = "#decfc5";
+static const char *fonts[]          = { "Lekton Nerd Font:style=Regular:size=12" };
+static const char dmenufont[]       = "Monofur Nerd Font Mono:style=Regular:size=12";
 static const char col_gray1[]       = "#9064e3";
 static const char col_gray2[]       = "#c2a6f7";
 static const char col_gray3[]       = "#c2a6f7";
@@ -33,11 +27,7 @@ static const unsigned int borderalpha = OPAQUE;
 /*	[SchemeSel]  = { col_gray4, col_gray2,  col_cyan  },*/
 /*};*/
 
-static const char *colors[][3]      = {
-    /*               fg           bg         border                         */
-    [SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins
-    [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win
-};
+#include "/home/xelius/.cache/wal/colors-wal-dwm.h"
 
 static const unsigned int alphas[][3]      = {
     /*               fg      bg        border*/
