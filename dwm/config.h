@@ -91,7 +91,7 @@ static const Key keys[] = {
   { MODKEY|ShiftMask,             XK_f,      spawn,          SHCMD("st -e ranger")},
   { MODKEY|ShiftMask,             XK_F10,    spawn,          SHCMD("st -e cava")},
   { MODKEY|ShiftMask,             XK_BackSpace,      spawn,  SHCMD("shutdown now")},
-  { MODKEY|ShiftMask,             XK_F5,     spawn,          SHCMD(" st -e amdgpu_top")},
+  { MODKEY|ShiftMask,             XK_F5,     spawn,          SHCMD(" st -e bashtop")},
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },

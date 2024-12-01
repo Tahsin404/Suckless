@@ -1,38 +1,38 @@
 format = """
-[╭─User───❯](bold blue) $username
+[╭─User───❯](blue) $username
 [┣─❯](bold red) $directory$rust$git_branch$git_status$package$golang$terraform$docker_context$python$docker_context$nodejs
-[╰─XLS────❯](bold green) 
+[╰─XLS────❯](green) 
 """
 [username]
-style_user = "green bold"
-style_root = "red bold"
+style_user = "green"
+style_root = "red"
 format = "[$user]($style) "
 disabled = false
 show_always = true
 
 [hostname]
 ssh_only = false
-format = 'on [$hostname](bold yellow) '
+format = 'on [$hostname](yellow) '
 trim_at = "."
 disabled = true
 
 # Replace the "❯" symbol in the prompt with "➜"
 [character]                            # The name of the module we are configuring is "character"
-success_symbol = "[﬌](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
-error_symbol = "[✗](bold red)"
+success_symbol = "[﬌](green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+error_symbol = "[✗](red)"
 #  
 # configure directory
 [directory]
 read_only = " "
 truncation_length = 10
 truncate_to_repo = true # truncates directory to root folder if in github repo
-style = "bold italic blue"
+style = "italic blue"
 
 [cmd_duration]
 min_time = 4
 show_milliseconds = false
 disabled = false
-style = "bold italic red"
+style = "italic red"
 
 [aws]
 symbol = "  "
@@ -46,7 +46,7 @@ symbol = " "
 [docker_context]
 symbol = " "
 format = "via [$symbol$context]($style) "
-style = "blue bold"
+style = "blue"
 only_with_files = true
 detect_files = ["docker-compose.yml", "docker-compose.yaml", "Dockerfile"]
 detect_folders = []
@@ -95,7 +95,7 @@ symbol = " "
 symbol = " "
 #pyenv_version_name = true
 format = 'via [${symbol}python (${version} )(\($virtualenv\) )]($style)'
-style = "bold yellow"
+style = "yellow"
 pyenv_prefix = "venv "
 python_binary = ["./venv/bin/python", "python", "python3", "python2"]
 detect_extensions = ["py"]
@@ -117,6 +117,6 @@ symbol = " "
 symbol = "ﯣ "
 
 [nodejs]
-format = "via [ Node.js $version](bold green) "
+format = "via [ Node.js $version](green) "
 detect_files = ["package.json", ".node-version"]
 detect_folders = ["node_modules"]

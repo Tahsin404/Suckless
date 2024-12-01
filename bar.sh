@@ -7,8 +7,6 @@ killall polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch the bar
-polybar dwm --config=$HOME/.config/polybar/config.ini &
-
-if [[ $(xrandr -q | grep 'HDMI1 connected') ]]; then
-	polybar dwm_external &
-fi
+polybar left --config=$HOME/.config/polybar/config.ini &
+polybar center --config=$HOME/.config/polybar/config.ini &
+polybar right --config=$HOME/.config/polybar/config.ini &
